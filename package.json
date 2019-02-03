@@ -5,9 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "opn": "^5.4.0"
+  }
 }
