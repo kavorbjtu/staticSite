@@ -4,7 +4,7 @@ const app = new Koa();
 const fs = require('fs');
 const KoaStatic = require('koa-static');
 // ctx 为Koa 提供的 Context 对象，表示一次对话的上下文(包括 HTTP 请求和 HTTP 回复)，通过操作ctx，就可以控制返回给用户的内容。
-app.use(KoaStatic('./'));
+app.use(KoaStatic('./static'));
 app.listen(3000);
 // 自动打开浏览器访问网站
 opn('http://localhost:3000/' );
